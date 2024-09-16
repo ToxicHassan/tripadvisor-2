@@ -1,0 +1,87 @@
+@media screen and (max-width: 71rem) {
+    .container {
+        max-width: 60rem;
+    }
+    .nav-btns-menu {
+        display: block;
+    }
+    .nav-btns {
+        display: none;
+    }
+    #region {
+        display: none;
+    }
+    .search-box-btn-5 {
+        display: grid;
+        grid-template-areas:
+        "a b"
+        "c d"
+        "e e";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .search-box-from-wrapper, .search-box-dest-wrapper {
+        width: auto;
+    }
+    .search-box-from-wrapper {
+        grid-area: a;
+    }
+    .search-box-dest-wrapper {
+        grid-area: b;
+    }
+    .date {
+        grid-area: c;
+    }
+    .travelers-count {
+        grid-area: d;
+    }
+    .search-btn {
+        grid-area: e;
+    }
+}
+@media screen and (max-width: 768px) {
+    .acount-svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sign-in-btn {
+        display: none;
+    }
+    .home-btn {
+        flex-basis: 62%;
+        justify-content: space-between;
+    }
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+        padding: 27px 10px 10px 10px;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        max-width: 700px;
+        border-radius: 14px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        -ms-border-radius: 14px;
+        -o-border-radius: 14px;
+    }
+    .search-btn {
+        padding: 10px;
+    }
+    .search-bar-divider {
+        display: block;
+        background-color: var(--divider-color);
+        height: 1px;
+        width: 95%;
+        margin-right: 14px;
+    }
+    .search-box-btn-5 {
+        grid-template-areas:
+        "a a"
+        "b b"
+        "c d"
+        "e e";
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
